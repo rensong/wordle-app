@@ -7,7 +7,6 @@ export const isValidWord = (word: string) => {
 export const isInWord = (completedWord: string, correctWord: string) => {
   const letterToLocationMapping: Record<string, number> = {};
   const inWord = ["", "", "", "", ""];
-  let wordIndex = 0;
   // Hack to remove correct letters from this function
   for (let i = 0; i < correctWord.length; i++) {
     if (correctWord[i] === completedWord[i]) {

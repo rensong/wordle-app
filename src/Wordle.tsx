@@ -11,7 +11,6 @@ import {
   auth,
   signInWithGoogle,
   signOutFromGoogle,
-  getTodaysWordFromFirestore,
   getStatsFromFirestore,
   updateStatsInFirestore,
 } from './services/firebase';
@@ -135,7 +134,7 @@ function Wordle({
 
   useEffect(() => {
     setCurrentGame(words, correctWord);
-  }, [words]);
+  }, [words, correctWord]);
 
   return (
       <div>

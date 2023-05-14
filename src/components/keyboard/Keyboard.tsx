@@ -1,7 +1,6 @@
 import { useEffect } from 'react'
 
-import { Grid, Paper } from "@mui/material";
-import { styled } from '@mui/material/styles';
+import { Grid } from "@mui/material";
 
 import Key from './Key';
 import {getLetterStatuses} from '../../lib/wordHelper';
@@ -26,7 +25,7 @@ export default function Keyboard({
       } else if (e.code === 'Backspace') {
         onKeyPress("BACKSPACE");
       } else {
-        if (e.key.match(/[a-z]/i) && e.key.length == 1) {
+        if (e.key.match(/[a-z]/i) && e.key.length === 1) {
           onKeyPress(e.key.toUpperCase());
         }
       }

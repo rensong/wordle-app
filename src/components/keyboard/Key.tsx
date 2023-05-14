@@ -2,7 +2,6 @@ import { Grid, Box } from "@mui/material";
 import { styled } from '@mui/material/styles';
 import {Colors} from '../../constants/colors';
 
-import {getLetterStatuses} from '../../lib/wordHelper';
 
 const Item = styled(Box)<{ status: string }>`
    background-color: ${p => (p.status === 'unused' ? Colors.keyGrey

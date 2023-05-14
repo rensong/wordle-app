@@ -1,4 +1,4 @@
-import { Typography, Box, Grid } from "@mui/material";
+import { Grid } from "@mui/material";
 import StatsBar from './StatsBar';
 
 type Props = {

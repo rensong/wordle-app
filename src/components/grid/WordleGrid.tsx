@@ -1,4 +1,3 @@
-import { Grid } from "@mui/material";
 import WordleRow from './WordleRow';
 
 type Props = {

@@ -23,7 +23,7 @@ function App() {
         setCorrectWord(CORRECT_WORD);
       });
     }
-  }, []);
+  }, [correctWord]);
 
   if (!correctWord) {
     // return loading state

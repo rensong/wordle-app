@@ -1,4 +1,4 @@
-import { Grid, Box, Paper } from "@mui/material";
+import { Grid, Box } from "@mui/material";
 import { styled } from '@mui/material/styles';
 
 import {isInWord} from '../../lib/wordHelper';

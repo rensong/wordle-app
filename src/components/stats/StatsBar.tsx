@@ -1,5 +1,4 @@
-import { Typography, Box, Grid } from "@mui/material";
-import {Colors} from '../../constants/colors';
+import { Box, Grid } from "@mui/material";
 import { styled } from '@mui/material/styles';
 
 type Props = {

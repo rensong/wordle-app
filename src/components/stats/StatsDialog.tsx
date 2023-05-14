@@ -11,9 +11,7 @@ import {
 } from "@mui/material";
 import StatsRecord from './StatsRecord';
 import StatsHistogram from './StatsHistogram';
-import {StatsData, calculateStatsData} from '../../lib/statsHelper';
-import {getStatsFromFirestore} from '../../services/firebase';
-import { useState, useEffect } from 'react'
+import {StatsData} from '../../lib/statsHelper';
 
 type Props = {
   user?: any,
