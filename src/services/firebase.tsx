@@ -41,7 +41,7 @@ const db = getFirestore(app);
 
 export const getTodaysWordFromFirestore = async () => {
   const date = new Date();
-  const [dateString] = date.toISOString().split('T');
+  const dateString = date.toLocaleDateString().replace(/\//g, "");
   return getDoc(doc(db, "words", dateString)).then(doc => {
     const data = doc.data();
     return data && data["word"];

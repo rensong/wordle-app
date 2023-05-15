@@ -28,14 +28,12 @@ export const getTodaysWordFromCache = () => {
   // do not pull from cache for now
   return null;
   // const date = new Date();
-  // const [dateString] = date.toISOString().split('T');
-  // return localStorage.getItem("current_word_" + dateString);
+  // return localStorage.getItem("current_word_" + date.toLocaleDateString());
 }
 
 export const setTodaysWordInCache = (word: string) => {
   // ignore cache for now
   return null;
   // const date = new Date();
-  // const [dateString] = date.toISOString().split('T');
-  // return localStorage.setItem("current_word_" + dateString, word);
+  // return localStorage.setItem("current_word_" + date.toLocaleDateString());
 }
