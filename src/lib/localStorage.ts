@@ -25,13 +25,17 @@ export const getCurrentGame = (correctWord: string) => {
 }
 
 export const getTodaysWordFromCache = () => {
-  const date = new Date();
-  const [dateString] = date.toISOString().split('T');
-  return localStorage.getItem("current_word_" + dateString);
+  // do not pull from cache for now
+  return null;
+  // const date = new Date();
+  // const [dateString] = date.toISOString().split('T');
+  // return localStorage.getItem("current_word_" + dateString);
 }
 
 export const setTodaysWordInCache = (word: string) => {
-  const date = new Date();
-  const [dateString] = date.toISOString().split('T');
-  return localStorage.setItem("current_word_" + dateString, word);
+  // ignore cache for now
+  return null;
+  // const date = new Date();
+  // const [dateString] = date.toISOString().split('T');
+  // return localStorage.setItem("current_word_" + dateString, word);
 }
